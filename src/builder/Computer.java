@@ -74,6 +74,62 @@ public class Computer {
             return new Computer(this);
         }
     }
+
+    public String getCPU() {
+        return CPU;
+    }
+
+    public void setCPU(String CPU) {
+        this.CPU = CPU;
+    }
+
+    public String getGPU() {
+        return GPU;
+    }
+
+    public void setGPU(String GPU) {
+        this.GPU = GPU;
+    }
+
+    public String getPcCase() {
+        return pcCase;
+    }
+
+    public void setPcCase(String pcCase) {
+        this.pcCase = pcCase;
+    }
+
+    public String getTypeOfMemory() {
+        return typeOfMemory;
+    }
+
+    public void setTypeOfMemory(String typeOfMemory) {
+        this.typeOfMemory = typeOfMemory;
+    }
+
+    public int getRAM() {
+        return RAM;
+    }
+
+    public void setRAM(int RAM) {
+        this.RAM = RAM;
+    }
+
+    public int getMemoryCapacity() {
+        return memoryCapacity;
+    }
+
+    public void setMemoryCapacity(int memoryCapacity) {
+        this.memoryCapacity = memoryCapacity;
+    }
+
+    public int getPSU() {
+        return PSU;
+    }
+
+    public void setPSU(int PSU) {
+        this.PSU = PSU;
+    }
 }
 
 
