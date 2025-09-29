@@ -41,6 +41,7 @@ public class Computer {
         private int memoryCapacity;
         private int RAM;
         private int PSU;
+
         public Builder buidCPU(String CPU) {
             this.CPU = CPU;
             return this ;
