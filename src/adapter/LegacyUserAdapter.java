@@ -7,6 +7,8 @@ public class LegacyUserAdapter implements UserDataProvider{
             throw new IllegalArgumentException("legacyUserServise cannot be null");
         }
         this.legacyUserService = legacyUserService;
+        //new LegacyUserSefr object
+        //
     }
 
     @Override

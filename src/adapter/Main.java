@@ -7,5 +7,9 @@ public class Main {
 
         System.out.println(provider.fetchUserData("123"));
         System.out.println(provider.fetchUserData("12"));
+
+        for (String user : legacyUserService.getUserInfo("11")) {
+            System.out.println(user);
+        }
     }
 }
