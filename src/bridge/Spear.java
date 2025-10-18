@@ -1,9 +1,20 @@
 package bridge;
 
 public class Spear implements Weapon {
+    public int damage(){
+        return 15;
+    }
+    public String getDescription(){
+        return "spear";
+    }
     @Override
     public void attack(String target) {
-        System.out.println("pierced the "+ target+ " with a spear");
-        System.out.println("-15hp");
+        System.out.println(attackType() + target+ " with " + getDescription());
+        System.out.println("-" + damage() + "xp");
+        System.out.println("--------------------------");
+    }
+    @Override
+    public String attackType() {
+        return "pierced the ";
     }
 }

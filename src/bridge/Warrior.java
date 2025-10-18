@@ -9,5 +9,5 @@ public abstract class Warrior {
         this.weapon = weapon;
     }
 
-    abstract void fight(String target);
+    public void fight(String target){};
 }
