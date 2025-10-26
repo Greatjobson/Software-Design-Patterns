@@ -3,6 +3,8 @@ package decorator;
 import bridge.Weapon;
 
 public class Sharpness extends improvementDecorator{
+    private String effectDesc = "Sharpness Effect";
+    private int damage = 10;
     public Sharpness(Weapon weapon){
         super(weapon);
     }
@@ -19,7 +21,7 @@ public class Sharpness extends improvementDecorator{
 
     @Override
     public String getDescription() {
-        return weapon.getDescription() + " + Sharpness Effect";
+        return weapon.getDescription() + effectDesc;
     }
 
     @Override

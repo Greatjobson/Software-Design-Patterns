@@ -80,8 +80,10 @@ public class AttackStrategy {
     }
 
     public void attakWithBow() {
-        if (archer == null)
-            System.out.println("We dont have archer");
+        if (archer == null) {
+            System.out.println("We dont have archer :(");
+            return;
+        }
         System.out.println("The archers are standing behind the shields.");
         archer.fight(target);
     }

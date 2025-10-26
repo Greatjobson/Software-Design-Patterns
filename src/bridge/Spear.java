@@ -15,6 +15,6 @@ public class Spear implements Weapon {
     }
     @Override
     public String attackType() {
-        return "pierced the ";
+        return "Pierced the ";
     }
 }
