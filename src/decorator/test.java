@@ -1,5 +1,10 @@
 package decorator;
-import bridge.*;
+import bridge.model.Warrior;
+import bridge.model.Weapon;
+import bridge.warrior.Archer;
+import bridge.warrior.Knight;
+import bridge.weapon.Bow;
+import bridge.weapon.Sword;
 
 public class test {
     public static void main(String[] args) {

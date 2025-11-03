@@ -1,4 +1,4 @@
-package strategy;
+package strategy.interfaces;
 
 public interface MovementBehavior {
     void move(String target, int distance);

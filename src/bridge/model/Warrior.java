@@ -1,16 +1,23 @@
-package bridge;
+package bridge.model;
 
-import strategy.MovementBehavior;
-import strategy.OnFoot;
+import bridge.weapon.Sword;
+import strategy.interfaces.MovementBehavior;
+import strategy.movements.OnFoot;
+
+import observer.*;
 
 public
-abstract class Warrior {
+abstract class Warrior implements Observer {
     protected Weapon weapon;
     private MovementBehavior movementBehavior;
     protected String warriorType;
 
     public Warrior(Weapon weapon){
         this.weapon = weapon;
+        this.movementBehavior = new OnFoot();
+    }
+    public Warrior(){
+        this.weapon = new Sword();
         this.movementBehavior = new OnFoot();
     }
     public void setWeapon(Weapon weapon) {
@@ -43,5 +50,9 @@ abstract class Warrior {
         return weapon;
     }
 
+    @Override
+    public void update(String message) {
+        System.out.println(getWarriorType() + " received a message: " + message);
+    }
 
 }

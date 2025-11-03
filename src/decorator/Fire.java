@@ -1,6 +1,6 @@
 package decorator;
 
-import bridge.*;
+import bridge.model.Weapon;
 
 public class Fire extends improvementDecorator{
     Fire(Weapon weapon){

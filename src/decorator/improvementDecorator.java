@@ -1,6 +1,6 @@
 package decorator;
 
-import bridge.Weapon;
+import bridge.model.Weapon;
 
 abstract public class improvementDecorator implements Weapon {
     protected Weapon weapon;

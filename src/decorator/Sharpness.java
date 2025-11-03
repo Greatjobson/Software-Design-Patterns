@@ -1,6 +1,6 @@
 package decorator;
 
-import bridge.Weapon;
+import bridge.model.Weapon;
 
 public class Sharpness extends improvementDecorator{
     private String effectDesc = "Sharpness Effect";

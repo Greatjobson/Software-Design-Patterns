@@ -1,11 +1,13 @@
-package bridge;
+package bridge.weapon;
 
-public class Bow implements Weapon{
+import bridge.model.Weapon;
+
+public class Axe implements Weapon {
     public int damage(){
-        return 7;
+        return 20;
     }
     public String getDescription(){
-        return "bow";
+        return "axe";
     }
     @Override
     public void attack(String target) {
@@ -13,9 +15,9 @@ public class Bow implements Weapon{
         System.out.println("-" + damage() + "xp");
         System.out.println("--------------------------");
     }
+
     @Override
     public String attackType() {
-        return "Shooting ";
+        return "Chopped up the";
     }
-
 }

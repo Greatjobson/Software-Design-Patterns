@@ -1,6 +1,8 @@
-package bridge;
+package bridge.weapon;
 
-public class Sword implements Weapon{
+import bridge.model.Weapon;
+
+public class Sword implements Weapon {
     public int damage(){
         return 10;
     }

@@ -1,20 +1,23 @@
-package bridge;
+package bridge.weapon;
 
-public class Spear implements Weapon {
+import bridge.model.Weapon;
+
+public class Bow implements Weapon {
     public int damage(){
-        return 15;
+        return 7;
     }
     public String getDescription(){
-        return "spear";
+        return "bow";
     }
     @Override
     public void attack(String target) {
-        System.out.println(attackType() + target+ " with " + getDescription());
+        System.out.println(attackType() + target + " with " + getDescription());
         System.out.println("-" + damage() + "xp");
         System.out.println("--------------------------");
     }
     @Override
     public String attackType() {
-        return "Pierced the ";
+        return "Shooting ";
     }
+
 }

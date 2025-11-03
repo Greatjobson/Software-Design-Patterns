@@ -1,6 +1,12 @@
 package facade;
 
-import bridge.*;
+import bridge.model.Weapon;
+import bridge.warrior.Archer;
+import bridge.warrior.Knight;
+import bridge.warrior.Viking;
+import bridge.weapon.Axe;
+import bridge.weapon.Bow;
+import bridge.weapon.Sword;
 
 public class test {
     public static void main(String[] args) {

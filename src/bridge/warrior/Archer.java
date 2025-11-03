@@ -1,8 +1,15 @@
-package bridge;
+package bridge.warrior;
 
-public class Archer extends Warrior{
+import bridge.model.Warrior;
+import bridge.model.Weapon;
+
+public class Archer extends Warrior {
     public Archer(Weapon weapon) {
         super(weapon);
+        super.warriorType = "[archer]";
+    }
+    public Archer(){
+        super();
         super.warriorType = "[archer]";
     }
     public void fight(String target) {

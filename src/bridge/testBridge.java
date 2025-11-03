@@ -1,5 +1,15 @@
 package bridge;
 
+import bridge.model.Warrior;
+import bridge.model.Weapon;
+import bridge.warrior.Archer;
+import bridge.warrior.Knight;
+import bridge.warrior.Viking;
+import bridge.weapon.Axe;
+import bridge.weapon.Bow;
+import bridge.weapon.Spear;
+import bridge.weapon.Sword;
+
 public class testBridge {
     public static void main(String[] args) {
         Weapon sword1 = new Sword();
