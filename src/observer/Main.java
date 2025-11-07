@@ -2,6 +2,8 @@ package observer;
 
 import bridge.model.Warrior;
 import bridge.warrior.*;
+import observer.channel.MessageChannel;
+import observer.channel.OrderChannel;
 
 
 public class Main {

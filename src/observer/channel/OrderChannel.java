@@ -1,6 +1,8 @@
-package observer;
+package observer.channel;
 
 import bridge.model.Warrior;
+import observer.api.Observer;
+import observer.api.Subject;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,10 +1,9 @@
 package bridge.model;
 
 import bridge.weapon.Sword;
+import observer.api.Observer;
 import strategy.interfaces.MovementBehavior;
 import strategy.movements.OnFoot;
-
-import observer.*;
 
 public
 abstract class Warrior implements Observer {

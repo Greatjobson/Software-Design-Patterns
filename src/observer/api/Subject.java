@@ -1,8 +1,8 @@
-package observer;
+package observer.api;
 
 import bridge.model.Warrior;
 
-interface Subject {
+public interface Subject {
     void addObserver(Warrior observer);
     void removeObserver(Warrior observer);
     void notifyObservers(String news);
