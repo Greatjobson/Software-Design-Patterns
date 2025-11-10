@@ -1,4 +1,4 @@
-package observer.api;
+package observer.channel;
 
 import bridge.model.Warrior;
 
